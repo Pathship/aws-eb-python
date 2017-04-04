@@ -7,4 +7,8 @@ RUN echo "deb http://ftp.uk.debian.org/debian jessie-backports main" >> /etc/apt
     libatlas-dev \
     ffmpeg \
     libblas-common \
-    libblas-dev
+    libblas-dev \
+    libatlas-base-dev \
+    gfortran
+
+RUN pip install numpy==1.12.1 Flask==0.12.1 sk-video==1.1.7
